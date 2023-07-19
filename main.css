@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=GFS+Didot&family=Inter:wght@300;700&family=Montserrat:wght@100;400;500&family=Plus+Jakarta+Sans:wght@200&family=Questrial&family=Raleway:wght@500&family=Roboto:wght@100;700&family=Zen+Dots&display=swap");
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+:root {
+  --back_color_form: #191e2e;
+  --back_inp_color: #1e2538;
+  --color_placeholder: rgba(255, 255, 255, 0.6);
+  --back_bth_color: #f2f60f;
+  --color_bth_is: #151a26;
+  --color_get_password: #3657cb;
+}
+html,
+body {
+  scroll-behavior: smooth;
+  background-color: var(--back_color_form);
+  font-family: "Roboto", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.title_sign_up > h2 {
+  color: white;
+  font-weight: 800;
+  font-size: 40px;
+  animation-name: top_title;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+}
+.title_sign_up {
+  text-align: center;
+}
+.main_block {
+  margin-top: 41px;
+  position: relative;
+}
+.input_form > input {
+  display: inline-block;
+  margin-bottom: 14px;
+  width: 422px;
+  height: 67px;
+  padding-left: 26px;
+  outline: none;
+  background-color: var(--back_inp_color);
+  border: none;
+  color: white;
+  font-size: 17px;
+  border-radius: 10px;
+  animation-name: show_inp;
+}
+placeholder, :placeholder-shown():not() {
+  color: rgba(255, 255, 255, 0.6);
+}
+.fr_name {
+  position: absolute;
+  right: 49%;
+  color: var(--color_placeholder);
+  top: 14%;
+}
+.fr_name2 {
+  position: absolute;
+  right: 56.5%;
+  color: var(--color_placeholder);
+  top: 63%;
+}
+.input_form {
+  text-align: center;
+  position: relative;
+}
+.sign_up_container {
+  margin-top: 34px;
+}
+.bth_to_sign {
+  text-align: center;
+  margin-top: 18px;
+}
+.bth_to_sign > a {
+  text-decoration: none;
+  color: var(--color_bth_is);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 166.5%;
+  background-color: var(--back_bth_color);
+  padding: 14px 185px;
+  border-radius: 10px;
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+}
+.bth_to_reg {
+  text-align: center;
+  margin-top: 37px;
+}
+.bth_to_get_password {
+  text-align: center;
+  margin-top: 37px;
+}
+.bth_to_get_password > a {
+  text-decoration: underline;
+  color: var(--color_get_password);
+  font-size: 17px;
+  font-weight: 500;
+}
+.bth_to_reg > a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 166.5%;
+  background-color: var(--back_inp_color);
+  padding: 14px 123px;
+  border-radius: 10px;
+}
+.switch-mode {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 90%;
+  left: 10%;
+  border: 4px solid yellow;
+  display: none;
+}
+
+/* Animations */
+@keyframes pulse {
+  0% {
+    box-shadow: 0px 1px 22px 3px var(--back_bth_color);
+  }
+}
+@keyframes top_title {
+  30% {transform: scale(1.1); transition: 1.5s ease;}
+  50% {transform: scale(1); transition: 1.5s ease;}
+  55% {text-shadow: 4px 1px 52px #f2f60f;}
+}

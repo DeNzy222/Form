@@ -1,0 +1,7 @@
+/* Media for form */
+
+@media (max-width: 425px), (max-width: 600px), (max-width: 1200px) {
+  .main_block {
+    margin-top: 101px;
+  }
+}
